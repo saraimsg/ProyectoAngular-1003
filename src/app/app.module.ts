@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SumaComponent } from './calculos/suma/suma.component';
 import { RestaComponent } from './calculos/resta/resta.component';
 
+import { FormsModule } from '@angular/forms';
 import { OperacionComponent } from './calculos/operacion/operacion.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { MenuComponent } from './menu/menu.component';
@@ -13,6 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { ProductoFilterPipe } from './product/producto-filter.pipe';
+import { TablaComponent } from './calculos/tabla/tabla.component';
+import { CinepolisComponent } from './calculos/cinepolis/cinepolis.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,10 @@ import { MatButtonModule } from '@angular/material/button';
     RestaComponent,
     OperacionComponent,
     ProductListComponent,
-    MenuComponent
+    MenuComponent,
+    ProductoFilterPipe,
+    TablaComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
